@@ -29,7 +29,6 @@ class BookingDetails(RetrieveAPIView):
 
 class UpdateBooking(RetrieveUpdateAPIView):
 	queryset = Booking.objects.all()
-	serializer_class = UpdateBookingSerializer
 	lookup_field = 'id'
 	lookup_url_kwarg = 'booking_id'
 	def get_serializer_class(self):
